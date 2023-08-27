@@ -44,7 +44,6 @@ public class BookController {
     @PostMapping(value = "/addBook")
     public ResponseEntity<?> addBook(@Validated @RequestBody Book book) {
         return bookService.addBook(book);
-
     }
 
 }
